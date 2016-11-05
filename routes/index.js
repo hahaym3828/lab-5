@@ -10,7 +10,7 @@ var flash = require('connect-flash');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('Home', {
+  res.render('index', {
     title: 'Home',
     message: 'Welcome to my lab5',
     user: req.user
