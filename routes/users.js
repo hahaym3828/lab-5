@@ -5,7 +5,7 @@ var passport = require('passport');
 /* GET users listing. */
 
 router.get('/', function(req, res, next) {
-  // use the Drink model to query the db for drink data
+
   function isLoggedIn (req,res,next) {
     if (req.isAuthenticated()){
       next();
