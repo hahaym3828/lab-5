@@ -1,0 +1,18 @@
+<% include partials/header.ejs %>
+<main class=" container">
+<h1><%=message %></h1>
+<table class="table table-striped">
+  <tr>
+    <th>UserName</th>
+    <th>_id</th>
+  </tr>
+  <% for (var i=0; i < account.length; i++) { %>
+  <tr>
+    <td><%= account[i].username %></td>
+    <td><%= account[i]._id %></td>
+
+  </tr>
+  <% } %>
+
+</table></main>
+<% include partials/footer.ejs %>
